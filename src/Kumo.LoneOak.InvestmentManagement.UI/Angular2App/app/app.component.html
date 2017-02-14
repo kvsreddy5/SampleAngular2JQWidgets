@@ -1,0 +1,34 @@
+﻿<jqxGrid #gridReference [source]='dataAdapter'></jqxGrid>
+<h3>Hello {{name}} </h3>
+
+<div>
+    <div style="float: left;">
+        <div>
+            <jqxButton #showWindowButton [width]='70' (onClick)="onShowButton($event)">Open</jqxButton>
+            <jqxButton #hideWindowButton [width]='70' (onClick)="onHideButton($event)">Close</jqxButton>
+        </div>
+
+    </div>
+    <div style="width: 100%; height: 650px; margin-top: 50px;" id="mainDemoContainer">
+        <jqxWindow #windowReference [auto-create]='false'>
+            <div id="windowHeader">
+                <span>
+                    Modal window Demo
+                </span>
+            </div>
+            <div style="overflow: hidden;" id="windowContent">
+                <div>
+                    Avatar is a 2009 American[6][7] epic science fiction film written and directed by
+                    James Cameron, and starring Sam Worthington, Zoe Saldana, Stephen Lang, Michelle
+                    Rodriguez, Joel David Moore, Giovanni Ribisi and Sigourney Weaver. The film is set
+                    in the mid-22nd century, when humans are mining a precious mineral called unobtanium
+                    on Pandora , a lush habitable moon of a gas giant in the Alpha Centauri star system.
+                    The expansion of the mining colony threatens the continued existence of a local
+                    tribe of Na'vi—a humanoid species indigenous to Pandora. The film's title refers
+                    to the genetically engineered Na'vi-human hybrid bodies used by a team of researchers
+                    to interact with the natives of Pandora.
+                </div>
+            </div>
+        </jqxWindow>
+    </div>
+</div>
